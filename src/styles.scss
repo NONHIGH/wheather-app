@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  margin: unset;
+  padding: unset;
+}
+
+body {
+  font-family: "Edu TAS Beginner", cursive;
+  background: linear-gradient(to bottom, #cea432, #f5f1d0);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  line-height: 1.5;
+  margin: unset;
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: unset;
+  &:active{
+    color: unset;
+  }
+}
+

@@ -1,0 +1,21 @@
+.search{
+    
+
+    .search__input{
+        width: 100%;
+        margin-top: 5%;
+        outline: unset;
+        border: unset;
+        border-radius: 0.2rem;
+        background: #211c1cfe;
+        color: #fcfaee;
+        padding: 2%;
+        &::placeholder{
+            color: #fcfaee;
+        }
+        &:focus{
+            outline: unset;
+            border: 1px solid #caceaa;
+        }
+    }
+}
