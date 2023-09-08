@@ -1,4 +1,25 @@
-<section>
-    <h1>Name of country: {{weather.name}}</h1>
-    <p>{{weather.sys.country}}</p>
+<section class="card">
+    
+    <div class="card__img">
+        <img src="{{imgT}}/{{weather.weather[0].icon}}@2x.png" alt="">
+    </div>
+    <div class="card__main">{{weather.weather[0].main}}</div>
+    <div class="card__city">{{weather.name}} , {{weather.sys.country}} / {{weather.main.temp | number: '1.0-0'}}&#8451;</div>
+
+    <div class="card__stats">
+        <div class="card__stat">
+            <div class="card__stat--stat">{{weather.main.pressure}} <sup>hPa</sup></div>
+            <div class="card__stat--name">Pressure</div>
+        </div>
+        <div class="card__stat">
+            <div class="card__stat--stat">{{weather.main.humidity}} <sup>%</sup></div>
+            <div class="card__stat--name">humidity</div>
+        </div>
+        <div class="card__stat">
+            <div class="card__stat--stat">{{weather.wind.speed}} <sup>m/s</sup></div>
+            <div class="card__stat--name">Wind</div>
+        </div>
+    </div>
+    
+
 </section>

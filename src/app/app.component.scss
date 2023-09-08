@@ -2,7 +2,6 @@
     padding: 2%;
     display: flex;
     background-color: #664121;
-    
     a{
         color: #ffff;
         opacity: .7;
@@ -13,9 +12,14 @@
 }
 
 .main__container {
-    // background: linear-gradient(to bottom, #d6a600, #7c4e24 );
     margin: 0 auto 0 auto;
     width: 50%;
+    
+    @media (max-width: 990px){
+        width: 95%;
+    }
 }
+
+
 
   

@@ -1,0 +1,76 @@
+.card {
+  background: linear-gradient(to bottom, #cda101, #724a11);
+  border-radius: 1rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  box-shadow: 3px 2px 2px #432705;
+  position: relative;
+
+  .card__img{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: url('https://www.xtrafondos.com/wallpapers/cielo-al-atardecer-reflejado-en-el-mar-4615.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+
+
+    img{
+        width: 3rem;
+        position: absolute;
+        top: 0rem;
+        right: -1rem;
+    }
+  }
+  .card__main {
+    margin-left: 0.6rem;
+    color: #fffe88;
+    font-size: 0.7rem;
+  }
+  .card__city {
+    margin-left: 0.6rem;
+    font-size: 1rem;
+  }
+  .card__stats {
+    background: #f5d505;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: auto;
+    .card__stat {
+        text-align: center;
+        width: 30%;
+        .card__stat--stat{
+          position: relative;
+        text-decoration: dashed;
+        font-size: 1rem;
+        sup{
+            position: absolute;
+            bottom: 0;
+            font-size: 0.5rem;
+          }
+      }
+      .card__stat--name{
+        font-size: 0.5rem;
+        color: #432705;
+      }
+      
+    }
+  }
+  @media (max-width: 990px) {
+    
+    min-height: 13vh;
+    .card__img{
+      height: 7rem;
+    }
+
+  }
+}

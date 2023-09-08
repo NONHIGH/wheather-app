@@ -7,11 +7,12 @@ import { WeatherData } from 'src/app/shared/interfaces/weather.interface';
   styleUrls: ['./weather.component.scss']
 })
 export class WeatherComponent implements OnChanges {
+  @Input() weather!: WeatherData;
+
   ngOnChanges(changes: SimpleChanges): void {
     console.log(this.weather);
     
   }
-  @Input() weather!: WeatherData;
-
+  public imgT = `http://openweathermap.org/img/wn`
   
 }
